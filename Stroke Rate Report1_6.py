@@ -12,9 +12,9 @@ from datetime import datetime
 
 ### CHANGE THE BELOW ###
 # Define the base file path (this can be dynamically set based on user input or a predefined location)
-file_path = "H:\\ASU\\ASU Race Reports\\Eddie Reese\\200 Fly\\"
+file_path = ""
 # Define the opponent name at the top of the script
-opponent_name = "Eddie Reese"
+opponent_name = ""
 ### NO MORE CHANGES ###
 
 
