@@ -8,6 +8,11 @@ This is the first data project I completed, where I used data-driven insights to
 * I ran the script for each 100 freestyle race in the A finals at the NCAA Championship from 2015-2024
 * Upon the completion of the data collection, I wrote and ran different Python scripts to help aggregate and ogranize the data
 * The resulting csv files were used to create compelling visuals with Tableau
+* I found that swimmers were:
+*   * Taking Less Cycles (strokes) year over year
+    * Maintaining similar stroke rates
+    * Pushing Underwater kicks farther
+    * Covering more ground per stroke
 * I used the visuals for a live presentation to club swimmers
 
 ## [Project 2: NCAA March Madness Predictive Models]
