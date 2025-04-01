@@ -9,7 +9,8 @@ This is the first data project I completed, where I used data-driven insights to
 * Upon the completion of the data collection, I wrote and ran different Python scripts to help aggregate and ogranize the data
 * The resulting csv files were used to create compelling visuals with Tableau
 * I found that swimmers were:
-*   * Taking Less Cycles (strokes) year over year
+*   * An Average of 1.83 seconds faster in 2024 than 2015 
+    * Taking Less Cycles (strokes) year over year
     * Maintaining similar stroke rates
     * Pushing Underwater kicks farther
     * Covering more ground per stroke
