@@ -67,10 +67,11 @@ Additional Performance Stats:
 Tableau Dashboards:
 
 Rider Profiles Dashboard:
-* Filterable radar charts with rider stats, win %, crash rate, and character bios
+* Filterable bar charts with rider stats, data-driven stats, track specialization stats, and character bios
 
 Track Leaderboard Dashboard:
 * Lap-level comparison of each rider’s best races on all tracks
+* Filterable by course and rider
 
 Race Trends Summary Dashboard:
 * Track difficulty vs. Flow Score, crash rate, and consistency metrics
