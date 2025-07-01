@@ -39,45 +39,44 @@ The second project I have completed involved learning about machine learning in 
 
 This project was a passion project built around the game Excitebike 64, where I analyzed every track in the Pro Circuit for every rider to determine who performs best statistically—and why. I especially enjoyed this project because it brought data into something that likely hasn’t been analyzed at this level before.
 
-🗃️ Data Collection & Processing
-Recorded full race data (lap times, crashes, race notes, and overheats) across three full Pro Circuit runs for all 6 riders
+Data Collection & Processing:
+Recorded full race data (lap times, crashes, bad landings, race notes, and overheats) across three full Pro Circuit runs for all 6 riders
 
 Collected all data manually and categorized race notes into qualitative indicators like:
-
-Sloppy Turn
-
-Close Finish
-
-Crash Recovery
+* Sloppy Turn
+* Close Finish
+* Sloppy Race
+* Clean Race
 
 Used Python and Google Sheets to clean, transform, and aggregate all data
 
-📐 Derived Metrics
-Flow Score (1–5): Measures race smoothness by factoring in crash frequency and pacing
+Derived Metrics:
 
-Track Difficulty Ratings: Derived from the coefficient of variation in lap times across all riders
+* Flow Score: Measures race smoothness by factoring in crash frequency and sloppiness
+* Pace Score: Measured from the variation in lap times across a rider's entire performance
+* Recovery Score: Measured from an aggregate of crashes, bad landings, and rider interferance
+* Surge Score:  Measured from the amount of times a rider appears in the top 5 lap times
+* Track Difficulty Ratings: Derived from the coefficient of variation in lap times across all riders (Flow, Technical, Punisher, and Nightmare)
 
-Flow, Technical, Punisher, and Nightmare
+Additional Performance Stats:
 
-Additional performance stats:
+* Clean Run %
+* Top 5 Finish Rate
+* Average Placement
 
-Clean Run %
+Tableau Dashboards:
 
-Top 5 Finish Rate
-
-Average Placement
-
-📊 Tableau Dashboards
-🏍 Rider Profiles Dashboard
+Rider Profiles Dashboard:
 Filterable radar charts with rider stats, win %, crash rate, and character bios
 
-🏁 Track Leaderboard Dashboard
+Track Leaderboard Dashboard:
 Lap-level comparison of each rider’s best races on all tracks
 
-📈 Race Trends Summary Dashboard
+Race Trends Summary Dashboard:
 Track difficulty vs. Flow Score, crash rate, and consistency metrics
 
-🧠 Key Questions Answered
+Key Questions Answered:
+
 Who is the best rider on each track type?
 
 Which riders are more consistent vs. high-risk/high-reward?
