@@ -34,3 +34,27 @@ The second project I have completed involved learning about machine learning in 
 * So I first looked into what my model was using as the most stand-out features.  Naturally, Seed differntial was the leading factor.  BSince so many 1v16 seed matchups exist, for example, and because nearly all 1 seeds won, the model would rely too heavily on seed differential, meaning upsets were never predicted.
 * With this in mind I dropped my Seed Differential column and ended up with far more variation in upest prediction.  I used this model as my main model and so far it has been my most accurate for both men and women.
 * I then built some models with only offensive stats in mind, defensive stats in mind, and end of season trends.  It was a very fun project that taught me how to search for key performance indicators and build models from them.
+
+## [Project 3: Excitebike 64 Rider Performance Analysis](https://public.tableau.com/app/profile/justin.ress/viz/ExciteBikeDashboardv9/RiderProfiles)
+
+This project was a passion project built around the game Excitebike 64. where I analyzed every track in the Pro Circuit for every rider to determine who performs best statistically—and why.  I think this project was especially fun as it brought data into something that probably has not been analyzed at this level before.
+
+* I recorded full race data (lap times, crashes, race notes, overheats) across three complete runs of the Pro Circuits for all 6 riders.
+* I collected all data manually, and categorized notes into performance indicators like “Sloppy Turn” or “Close Finish.”
+I created derived metrics like:
+   * Flow Score (1–5): measures how smooth a run was, factoring in crashes and pace
+   * Track Difficulty Ratings (Flow, Technical, Punisher, Nightmare) measured from the coefficient of variation of all laps and characters for each course
+   * Clean Run %, Top 5 Rate, and Avg Placement
+I used Python and Google Sheets to clean and structure the data, then built three Tableau dashboards:
+   * 🏍 Rider Profiles Dashboard – Filterable breakdown with radar charts, win %, crash rate, and character bios
+   * 🏁 Track Leaderboard Dashboard – Lap-level analysis of each track showing top performances and best laps
+   * 📊 Race Trends Summary Dashboard – Comparison of Flow Score, Clean Run %, and placement across difficulty
+These dashboards helped answer:
+   * Who is the best rider on each track?
+   * Which riders are more consistent and which are more high-risk high-reward?
+   * Where does each character underperform and why?
+   * If you were to enter a tournament, which rider would you use based on your play-style?
+This project combined my love for data and gaming, and showed how even subjective expereinces like video games can be turned into objective insights.
+
+
+
