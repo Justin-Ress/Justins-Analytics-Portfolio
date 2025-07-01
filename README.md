@@ -67,25 +67,28 @@ Additional Performance Stats:
 Tableau Dashboards:
 
 Rider Profiles Dashboard:
-Filterable radar charts with rider stats, win %, crash rate, and character bios
+* Filterable radar charts with rider stats, win %, crash rate, and character bios
 
 Track Leaderboard Dashboard:
-Lap-level comparison of each rider’s best races on all tracks
+* Lap-level comparison of each rider’s best races on all tracks
 
 Race Trends Summary Dashboard:
-Track difficulty vs. Flow Score, crash rate, and consistency metrics
+* Track difficulty vs. Flow Score, crash rate, and consistency metrics
 
 Key Questions Answered:
 
-Who is the best rider on each track type?
+* Who is the best rider on each track type?
+* Which riders are more consistent vs. high-risk/high-reward?
+* Where does each character struggle and why?
+* If you were entering a tournament, which rider should you choose based on your play style?
 
-Which riders are more consistent vs. high-risk/high-reward?
+This project combined my love for gaming and data and proved that even subjective experiences, like racing video games, can yield compelling, objective insights.
 
-Where does each character struggle and why?
 
-If you were entering a tournament, which rider should you choose based on your play style?
 
-This project combined my love for gaming and data and proved that even subjective experiences—like racing video games—can yield compelling, objective insights.
+
+
+
 
 
 
