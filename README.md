@@ -37,24 +37,56 @@ The second project I have completed involved learning about machine learning in 
 
 ## [Project 3: Excitebike 64 Rider Performance Analysis](https://public.tableau.com/app/profile/justin.ress/viz/ExciteBikeDashboardv9/RiderProfiles)
 
-This project was a passion project built around the game Excitebike 64. where I analyzed every track in the Pro Circuit for every rider to determine who performs best statistically—and why.  I think this project was especially fun as it brought data into something that probably has not been analyzed at this level before.
+This project was a passion project built around the game Excitebike 64, where I analyzed every track in the Pro Circuit for every rider to determine who performs best statistically—and why. I especially enjoyed this project because it brought data into something that likely hasn’t been analyzed at this level before.
 
-* I recorded full race data (lap times, crashes, race notes, overheats) across three complete runs of the Pro Circuits for all 6 riders.
-* I collected all data manually, and categorized notes into performance indicators like “Sloppy Turn” or “Close Finish.”
-I created derived metrics like:
-   * Flow Score (1–5): measures how smooth a run was, factoring in crashes and pace
-   * Track Difficulty Ratings (Flow, Technical, Punisher, Nightmare) measured from the coefficient of variation of all laps and characters for each course
-   * Clean Run %, Top 5 Rate, and Avg Placement
-I used Python and Google Sheets to clean and structure the data, then built three Tableau dashboards:
-   * 🏍 Rider Profiles Dashboard – Filterable breakdown with radar charts, win %, crash rate, and character bios
-   * 🏁 Track Leaderboard Dashboard – Lap-level analysis of each track showing top performances and best laps
-   * 📊 Race Trends Summary Dashboard – Comparison of Flow Score, Clean Run %, and placement across difficulty
-These dashboards helped answer:
-   * Who is the best rider on each track?
-   * Which riders are more consistent and which are more high-risk high-reward?
-   * Where does each character underperform and why?
-   * If you were to enter a tournament, which rider would you use based on your play-style?
-This project combined my love for data and gaming, and showed how even subjective expereinces like video games can be turned into objective insights.
+🗃️ Data Collection & Processing
+Recorded full race data (lap times, crashes, race notes, and overheats) across three full Pro Circuit runs for all 6 riders
+
+Collected all data manually and categorized race notes into qualitative indicators like:
+
+Sloppy Turn
+
+Close Finish
+
+Crash Recovery
+
+Used Python and Google Sheets to clean, transform, and aggregate all data
+
+📐 Derived Metrics
+Flow Score (1–5): Measures race smoothness by factoring in crash frequency and pacing
+
+Track Difficulty Ratings: Derived from the coefficient of variation in lap times across all riders
+
+Flow, Technical, Punisher, and Nightmare
+
+Additional performance stats:
+
+Clean Run %
+
+Top 5 Finish Rate
+
+Average Placement
+
+📊 Tableau Dashboards
+🏍 Rider Profiles Dashboard
+Filterable radar charts with rider stats, win %, crash rate, and character bios
+
+🏁 Track Leaderboard Dashboard
+Lap-level comparison of each rider’s best races on all tracks
+
+📈 Race Trends Summary Dashboard
+Track difficulty vs. Flow Score, crash rate, and consistency metrics
+
+🧠 Key Questions Answered
+Who is the best rider on each track type?
+
+Which riders are more consistent vs. high-risk/high-reward?
+
+Where does each character struggle and why?
+
+If you were entering a tournament, which rider should you choose based on your play style?
+
+This project combined my love for gaming and data and proved that even subjective experiences—like racing video games—can yield compelling, objective insights.
 
 
 
