@@ -38,8 +38,8 @@ Final step in the modeling pipeline. Prepares a valid Kaggle submission file by:
 
 - Loading model-generated predictions for both Men's and Women's tournaments
 - Loading Kaggle template files with placeholder matchups
-- Replacing template values (0.5) with real model probabilities where available
-- Concatenating all predictions into a single CSV
+- Replacing template values (0.5) with real model probabilities where available (the kaggle competition required a predictoin of all potential matchups in the NCAA, but my model only predicted the tourney matchups)
+- Concatenating all predictions into a single CSV 
 - Saving the result for upload
 
 Used to create the official `submission.csv` file for the Kaggle competition.
