@@ -1,1 +1,35 @@
 This contains various python scripts used to clean, organize and aggregate data
+
+### Evaluate_XGBoost.py
+
+This script evaluates the performance of a pre-trained XGBoost model on historical NCAA tournament data.
+
+It performs the following steps:
+- Loads a cleaned dataset of past matchups and win outcomes
+- Drops selected columns to simulate different model feature sets
+- Splits the data into training and testing subsets
+- Loads a pre-trained XGBoost model from disk
+- Calculates probability predictions for each matchup
+- Tests different classification thresholds (e.g., 0.45, 0.48, 0.50, etc.)
+- Reports final model performance metrics:
+  - Accuracy
+  - Brier Score
+  - Log Loss
+
+This script helps identify the optimal decision threshold and assess the model’s calibration and reliability.
+
+### 2025_Predictions.py
+
+Generates matchup predictions for the 2025 NCAA Women's Tournament using a trained XGBoost model.
+
+Steps performed:
+- Loads a Trends-Only model from disk
+- Loads a 2025 tournament prediction dataset (without outcome labels)
+- Renames or drops columns to align with the model’s expected features
+- Validates feature compatibility between model and dataset
+- Generates win probabilities for each matchup
+- Outputs a CSV with `TeamID1`, `TeamID2`, and predicted `Win_Probability`
+
+This script is designed for generating real-time tournament predictions once the bracket is known.
+
+
