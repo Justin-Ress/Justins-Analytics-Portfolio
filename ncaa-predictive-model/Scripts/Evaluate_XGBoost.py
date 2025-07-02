@@ -31,29 +31,9 @@ xgb_model = joblib.load(model_path)
 # 5 Make probability predictions on the test set
 y_pred_proba = xgb_model.predict_proba(X_test)[:, 1]  # Probability that Team1 wins
 
-# 6 Test Different Decision Thresholds
-best_acc = 0
-best_threshold = 0.5  # Default threshold
-accuracy_results = {}
 
-print("\n🔹 **Testing Different Decision Thresholds** 🔹")
-for threshold in [.45,.48,.50,.53,.56]:
-    y_pred = (y_pred_proba > threshold).astype(int)
-    acc = accuracy_score(y_test, y_pred)
-    accuracy_results[threshold] = acc
-    
-    # Store best threshold
-    if acc > best_acc:
-        best_acc = acc
-        best_threshold = threshold
-
-    print(f"Threshold {threshold:.2f} → Accuracy: {acc:.4f}")
-
-# ✅ Apply Best Threshold for Final Prediction
-y_pred_final = (y_pred_proba > best_threshold).astype(int)
-
-# 7️⃣ Evaluate Model Performance with Best Threshold
-final_accuracy = accuracy_score(y_test, y_pred_final)
+# 6 Evaluate Model Performance
+final_accuracy = accuracy_score(y_test, y_pred_proba)
 final_brier = brier_score_loss(y_test, y_pred_proba)
 final_log_loss = log_loss(y_test, y_pred_proba)
 
@@ -66,8 +46,7 @@ print(f"Test Accuracy: {test_accuracy:.4f}")
 
 
 
-print("\n🔹 **Final Model Performance Using Best Threshold** 🔹")
-print(f"✅ Best Threshold: {best_threshold:.2f}")
+print("\n🔹 **Final Model Performance** 🔹")
 print(f"✅ Accuracy: {final_accuracy:.4f}")
 print(f"✅ Brier Score: {final_brier:.4f}")
 print(f"✅ Log Loss: {final_log_loss:.4f}")
