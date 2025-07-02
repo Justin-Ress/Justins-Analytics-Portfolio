@@ -15,6 +15,26 @@ Steps:
 
 This script ensures the model learns from both perspectives of every game and has balanced training labels.
 
+### tune_model_gridsearch.py
+
+Trains and tunes an XGBoost model using `GridSearchCV` and saves the best version for future predictions.
+
+Steps performed:
+- Loads a pre-cleaned training dataset
+- Drops categorical columns (e.g., `Conf_Team1`, `Conf_Team2`) if present
+- Splits data into stratified training and testing sets
+- Runs a full grid search across hyperparameters like:
+  - `learning_rate`
+  - `max_depth`
+  - `min_child_weight`
+  - `subsample`
+  - `colsample_bytree`
+  - `gamma`
+- Optimizes using **Brier Score** (preferred for probabilistic accuracy)
+- Visualizes feature importance using `matplotlib`
+- Saves the best model as a `.pkl` file for later use in prediction
+
+> This script is model-agnostic — it can be used for either men's or women's datasets by updating the file path to the appropriate training CSV.
 
 ### Evaluate_XGBoost.py
 
