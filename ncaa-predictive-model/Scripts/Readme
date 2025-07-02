@@ -1,4 +1,4 @@
-This contains various python scripts used to clean and organize data as well as train/test models
+This contains various python scripts used to clean and organize data as well as train/test models.  Descriptions are written in order of the data pipeline
 
 ### Evaluate_XGBoost.py
 
