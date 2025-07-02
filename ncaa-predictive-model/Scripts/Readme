@@ -18,7 +18,7 @@ It performs the following steps:
 
 This script helps identify the optimal decision threshold and assess the model’s calibration and reliability.
 
-## 2025_Predictions.py
+### 2025_Predictions.py
 
 Generates matchup predictions for the 2025 NCAA Women's Tournament using a trained XGBoost model.
 
@@ -32,6 +32,17 @@ Steps performed:
 
 This script is designed for generating real-time tournament predictions once the bracket is known.
 
+### prepare_kaggle_submission.py
+
+Final step in the modeling pipeline. Prepares a valid Kaggle submission file by:
+
+- Loading model-generated predictions for both Men's and Women's tournaments
+- Loading Kaggle template files with placeholder matchups
+- Replacing template values (0.5) with real model probabilities where available
+- Concatenating all predictions into a single CSV
+- Saving the result for upload
+
+Used to create the official `submission.csv` file for the Kaggle competition.
 
 
 
