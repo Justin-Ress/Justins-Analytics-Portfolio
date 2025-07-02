@@ -1,5 +1,21 @@
 This contains various python scripts used to clean and organize data as well as train/test models.  Descriptions are written in order of the data pipeline
 
+### create_training_dataset.py
+
+Generates the final training dataset used for model development by merging team stats and historical tournament matchups.
+
+Steps:
+- Loads season-level stats and NCAA tournament matchups
+- Merges team stats into matchups for both winning and losing teams
+- Computes stat differences (Team1 − Team2) for all numeric features
+- Duplicates matchups with flipped teams and inverted outcomes
+- Outputs a clean CSV with:
+  - `Season`, `TeamID1`, `TeamID2`, `Win`
+  - All stat difference columns (e.g., `PPG_Diff`, `OffRtg_Diff`, etc.)
+
+This script ensures the model learns from both perspectives of every game and has balanced training labels.
+
+
 ### Evaluate_XGBoost.py
 
 This script evaluates the performance of a pre-trained XGBoost model on historical NCAA tournament data.
@@ -17,7 +33,7 @@ It performs the following steps:
 
 This script helps identify the optimal decision threshold and assess the model’s calibration and reliability.
 
-### 2025_Predictions.py
+### predict_matchups.py
 
 Generates matchup predictions using a specified XGBoost model and matchup dataset.
 
