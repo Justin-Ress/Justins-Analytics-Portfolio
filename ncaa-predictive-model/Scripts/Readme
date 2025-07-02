@@ -19,7 +19,7 @@ This script helps identify the optimal decision threshold and assess the modelâ€
 
 ### 2025_Predictions.py
 
-Generates matchup predictions for the 2025 NCAA Women's Tournament using a trained XGBoost model.
+Generates matchup predictions using a specified XGBoost model and matchup dataset.
 
 Steps performed:
 - Loads whatever model is desired (change file path)
@@ -30,6 +30,14 @@ Steps performed:
 - Outputs a CSV with `TeamID1`, `TeamID2`, and predicted `Win_Probability`
 
 This script is designed for generating real-time tournament predictions once the bracket is known.
+
+To use:
+- Update the file path to your desired model `.pkl` file
+- Provide a CSV containing `TeamID1`, `TeamID2`, and all required features
+- The script will:
+  - Align the datasetâ€™s features with the model
+  - Predict the probability that `TeamID1` wins each matchup
+  - Output a CSV with `TeamID1`, `TeamID2`, and `Win_Probability`
 
 ### select_high_confidence_predictions.py
 
@@ -42,7 +50,7 @@ Steps:
 - If another model agrees on the winner **and** has higher confidence, its prediction is used
 - Generates a final CSV with adjusted predictions
 
-Useful for ensembling or refining Kaggle submissions with multiple model perspectives.
+Useful for going big or going home and attempting to get the best possible brier score I can.
 
 
 ### prepare_kaggle_submission.py
