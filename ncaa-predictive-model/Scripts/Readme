@@ -8,9 +8,8 @@ It performs the following steps:
 - Loads a cleaned dataset of past matchups and win outcomes
 - Drops selected columns to simulate different model feature sets
 - Splits the data into training and testing subsets
-- Loads a pre-trained XGBoost model from disk
+- Loads a pre-trained XGBoost model from disk (can change depending on which model needs to be used)
 - Calculates probability predictions for each matchup
-- Tests different classification thresholds (e.g., 0.45, 0.48, 0.50, etc.)
 - Reports final model performance metrics:
   - Accuracy
   - Brier Score
@@ -23,14 +22,28 @@ This script helps identify the optimal decision threshold and assess the model�
 Generates matchup predictions for the 2025 NCAA Women's Tournament using a trained XGBoost model.
 
 Steps performed:
-- Loads a Trends-Only model from disk
+- Loads whatever model is desired (change file path)
 - Loads a 2025 tournament prediction dataset (without outcome labels)
-- Renames or drops columns to align with the model’s expected features
+- Renames or drops columns to align with the model’s expected features (depending on which model was selected)
 - Validates feature compatibility between model and dataset
 - Generates win probabilities for each matchup
 - Outputs a CSV with `TeamID1`, `TeamID2`, and predicted `Win_Probability`
 
 This script is designed for generating real-time tournament predictions once the bracket is known.
+
+### select_high_confidence_predictions.py
+
+Combines multiple model outputs to select the most confident prediction for each matchup.
+
+Steps:
+- Loads prediction files from 5 different models
+- Uses a specified "main model" to define the predicted winner
+- Compares each matchup across models
+- If another model agrees on the winner **and** has higher confidence, its prediction is used
+- Generates a final CSV with adjusted predictions
+
+Useful for ensembling or refining Kaggle submissions with multiple model perspectives.
+
 
 ### prepare_kaggle_submission.py
 
