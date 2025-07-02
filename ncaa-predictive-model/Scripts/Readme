@@ -30,7 +30,7 @@ Steps performed:
   - `subsample`
   - `colsample_bytree`
   - `gamma`
-- Optimizes using **Brier Score** (preferred for probabilistic accuracy)
+- Optimizes using **Brier Score** (preferred for probabilistic accuracy and Kaggle Competition Grading)
 - Visualizes feature importance using `matplotlib`
 - Saves the best model as a `.pkl` file for later use in prediction
 
