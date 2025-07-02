@@ -1,4 +1,4 @@
-This contains various python scripts used to clean, organize and aggregate data
+This contains various python scripts used to clean and organize data as well as train/test models
 
 ### Evaluate_XGBoost.py
 
