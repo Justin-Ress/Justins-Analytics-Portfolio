@@ -40,3 +40,25 @@ Metrics include:
 - `Sloppy_Play_Index`, `Hack_A_Shaq_Rate`, `Boom_or_Bust`
 - `Stl_Ast_Ratio`, `Hustle_Index`, `Assist_Dependency`, and more  
 > Can be optionally joined to `season_base_averages` using `Season` and `Team
+
+---
+
+### `training_dataset.sql`
+
+Builds the final **training dataset** used for model development by joining historical tournament matchups with full-season stats and performance trends.
+
+**Key features:**
+- Merges `TeamID1` and `TeamID2` from historical matchups with their corresponding stats
+- Computes differences between teams for:
+  - Raw stats (e.g., `OR_Diff`, `DefRtg_Diff`)
+  - Performance trends from last 30 days (e.g., `OR_Trend_Diff`, `FG_Trend_Diff`)
+  - Conference tournament win % (`Conf_Tourney_WinPct_Diff`)
+- Adds a binary label column `Win` (1 if Team1 won, 0 otherwise)
+- Used to create the primary training CSV used by all XGBoost models
+
+**Source Tables Used:**
+- `MensTourneyMatchups`: All historical NCAA tournament matchups (with winner/loser)
+- `Combined_FinalSeason`: Preprocessed season + trend metrics for each team-year
+
+> This query is the backbone of your predictive model — it gives the model both long-term averages and short-term momentum indicators to learn from.
+
