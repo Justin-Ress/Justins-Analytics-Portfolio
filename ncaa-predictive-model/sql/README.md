@@ -60,5 +60,5 @@ Builds the final **training dataset** used for model development by joining hist
 - `MensTourneyMatchups`: All historical NCAA tournament matchups (with winner/loser)
 - `Combined_FinalSeason`: Preprocessed season + trend metrics for each team-year
 
-> This query is the backbone of your predictive model — it gives the model both long-term averages and short-term momentum indicators to learn from.
+> This query is the backbone of the predictive model — it gives the model both long-term averages and short-term momentum indicators to learn from.
 
