@@ -1,4 +1,5 @@
--- this query takes teh full season data that we gathered from previous queries and normalizes the last 25 day trends so that they are all around 1.0
+-- this query takes teh full season data that we gathered from previous queries and normalizes the last 25 day trends so that they are all around 1.0.
+-- This can then be used to determine how often a team being hot or cold influences tournament results
 
 SELECT 
     f.TeamID,
