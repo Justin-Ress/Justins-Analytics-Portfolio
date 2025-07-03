@@ -30,7 +30,7 @@ Includes:
 - Points per game, field goal %, assists, rebounds, turnovers, etc.
 - Offensive Rating, Defensive Rating
 - Opponent average stats to compute Strength of Schedule (SoS)  
-> This forms the statistical foundation of your predictive features.
+> This forms the statistical foundation of predictive features.
 
 ---
 
@@ -39,7 +39,6 @@ Generates advanced or creative KPIs based on play-by-play event ratios.
 Metrics include:
 - `Sloppy_Play_Index`, `Hack_A_Shaq_Rate`, `Boom_or_Bust`
 - `Stl_Ast_Ratio`, `Hustle_Index`, `Assist_Dependency`, and more  
-> Can be optionally joined to `season_base_averages` using `Season` and `Team
 
 ---
 
