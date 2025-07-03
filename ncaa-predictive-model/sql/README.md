@@ -8,7 +8,7 @@ This folder contains all BigQuery SQL scripts used to extract, clean, and prepar
 
 ### `conference_tourney_records.sql`  
 Calculates each team’s win percentage in their conference tournament for each season.  
-- Combines win/loss data from `WConfGames`
+- Combines win/loss data from Conference Games csv
 - Aggregates total wins and games played per team
 - Outputs: `Season`, `TeamID`, `ConfAbbrev`, `Wins`, `Games`, `Conf_Tourney_WinPct`  
 > Used to evaluate teams' performance in high-pressure postseason games.
@@ -51,7 +51,7 @@ Builds the final **training dataset** used for model development by joining hist
 - Merges `TeamID1` and `TeamID2` from historical matchups with their corresponding stats
 - Computes differences between teams for:
   - Raw stats (e.g., `OR_Diff`, `DefRtg_Diff`)
-  - Performance trends from last 30 days (e.g., `OR_Trend_Diff`, `FG_Trend_Diff`)
+  - Performance trends from last 25 days (e.g., `OR_Trend_Diff`, `FG_Trend_Diff`)
   - Conference tournament win % (`Conf_Tourney_WinPct_Diff`)
 - Adds a binary label column `Win` (1 if Team1 won, 0 otherwise)
 - Used to create the primary training CSV used by all XGBoost models
