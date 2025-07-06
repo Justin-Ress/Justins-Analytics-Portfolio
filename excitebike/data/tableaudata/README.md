@@ -60,6 +60,7 @@ Each row represents a **single race run** and includes:
   - **Consistency (later called pace):** Measures lap time consistency (standard deviation within the race)
   - **Sloppiness Score (later inversed to Recovery Score):** Aggregated score from crashes, bad landings, and interference
   - **Clean Run Indicator:** Boolean flag for whether the run had *zero* negative events
+  - **Surge Points: Points given for overall best lap position among the course**
 
 This file supports race-by-race analysis and powers elements of the visual dashboards such as top 5 lap charts, flow ratings, and difficulty-based comparisons.
 
