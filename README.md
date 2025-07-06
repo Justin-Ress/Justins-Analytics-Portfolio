@@ -10,10 +10,10 @@ This is the first data project I completed, where I used data-driven insights to
 * The resulting csv files were used to create compelling visuals with Tableau
 * I found that swimmers were:
 *   * An Average of 1.83 seconds faster in 2024 than 2015 
-    * Taking Less Cycles (strokes) year over year
-    * Maintaining similar stroke rates
-    * Pushing Underwater kicks farther
-    * Covering more ground per stroke
+    * Taking Less Cycles (strokes) year over year by 20%
+    * Maintaining similar stroke rates <1% change
+    * Pushing Underwater kicks farther ~10 yards farther on average
+    * Covering more ground per stroke ~5% more distance per cycle covered
 * I used the visuals for a live presentation to club swimmers
 
 ## [Project 2: NCAA March Madness Predictive Models]
