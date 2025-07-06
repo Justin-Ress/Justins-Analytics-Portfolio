@@ -40,3 +40,27 @@ Each row represents one rider and includes:
 
 This cleaned dataset serves as the basis for the rider profile dashboard and enables direct comparison between character styles, strengths, and performance consistency.
 
+### 🏁 Race Data with New Metrics
+
+This file builds on the original raw race data by including new performance metrics and cleaned values for each run.
+
+Each row represents a **single race run** and includes:
+
+- **Original Race Info:**
+  - Rider name
+  - Run number
+  - Cup and Course
+  - Lap times and total time
+  - Number of crashes, bad landings, and rider interferences
+  - Overheat indicator
+  - Final placement and race notes
+
+- **Newly Calculated Metrics:**
+  - **Flow Score:** Quantifies how smooth and uninterrupted a race was, based on notes and event flags
+  - **Consistency (later called pace):** Measures lap time consistency (standard deviation within the race)
+  - **Sloppiness Score (later inversed to Recovery Score):** Aggregated score from crashes, bad landings, and interference
+  - **Clean Run Indicator:** Boolean flag for whether the run had *zero* negative events
+
+This file supports race-by-race analysis and powers elements of the visual dashboards such as top 5 lap charts, flow ratings, and difficulty-based comparisons.
+
+
