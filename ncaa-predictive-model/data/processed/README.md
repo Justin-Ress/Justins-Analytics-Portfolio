@@ -13,5 +13,3 @@ These are the final datasets used to train the XGBoost models. Each row represen
 - Conference tournament win % differences
 - Binary outcome `Win` (1 if Team1 won)
 
-These datasets were generated using `Combined_FinalSeason.sql` and cleaned with `NewTrainingDatasetv2.py`.
-
