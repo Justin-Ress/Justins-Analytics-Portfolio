@@ -62,7 +62,7 @@ Derived Metrics:
 Additional Performance Stats:
 
 * Clean Run %
-* Top 5 Finish Rate
+* Top 3 Finish Rate
 * Average Placement
 
 Tableau Dashboards:
