@@ -1,6 +1,7 @@
 # Justin's Portfolio
 
 ## [Project 1: Explaining Improvement at the Elite Level of Swimming](https://public.tableau.com/app/profile/justin.ress/viz/100FREENCAAAnalysis/StartBreakoutDistanceTime)
+## [Improvement in Swimming - Slides](https://docs.google.com/presentation/d/1oBngOtQkMqE9NKYmaXMpbXpXo549e3IrUyCKEplcpD8/edit?usp=sharing)
 
 This is the first data project I completed, where I used data-driven insights to understand what it takes to improve in swimming at an elite level.
 
